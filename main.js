@@ -21,11 +21,11 @@ client.on('ready', async () => {
   scalingChannels2(client)
 })
 
-client.on('guildMemberAdd', guildMember =>{
-  const welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'OLRP Fan');
+//client.on('guildMemberAdd', guildMember =>{
+  //const welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'OLRP Fan');
 
-  guildMember.roles.add(welcomeRole);
-  guildMember.guild.channels.cache.get('844426724539498536').reply(`Welcome <@${guildMember.user.id}> to Ocean Life Roleplay! If you're interested, head on over to https://olrp.invisionservice.com/application/ to apply! We hope you enjoy your stay!`)
+  //guildMember.roles.add(welcomeRole);
+  //guildMember.guild.channels.cache.get('844426724539498536').reply(`Welcome <@${guildMember.user.id}> to Ocean Life Roleplay! If you're interested, head on over to https://olrp.invisionservice.com/application/ to apply! We hope you enjoy your stay!`)
 })
 
 client.login(config.token)
